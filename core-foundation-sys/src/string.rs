@@ -41,10 +41,10 @@ pub static kCFStringEncodingUTF8: CFStringEncoding = 0x08000100;
 
 //static kCFStringEncodingUTF16: CFStringEncoding = 0x0100;
 //static kCFStringEncodingUTF16BE: CFStringEncoding = 0x10000100;
-//static kCFStringEncodingUTF16LE: CFStringEncoding = 0x14000100;
+pub static kCFStringEncodingUTF16LE: CFStringEncoding = 0x14000100;
 //static kCFStringEncodingUTF32: CFStringEncoding = 0x0c000100;
 //static kCFStringEncodingUTF32BE: CFStringEncoding = 0x18000100;
-//static kCFStringEncodingUTF32LE: CFStringEncoding = 0x1c000100;
+pub static kCFStringEncodingUTF32LE: CFStringEncoding = 0x1c000100;
 
 
 // CFStringEncodingExt.h
