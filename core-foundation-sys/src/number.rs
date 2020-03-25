@@ -19,8 +19,8 @@ pub type CFBooleanRef = *const __CFBoolean;
 pub type CFNumberType = u32;
 
 // members of enum CFNumberType
-// static kCFNumberSInt8Type:     CFNumberType = 1;
-// static kCFNumberSInt16Type:    CFNumberType = 2;
+pub static kCFNumberSInt8Type:     CFNumberType = 1;
+pub static kCFNumberSInt16Type:    CFNumberType = 2;
 pub static kCFNumberSInt32Type:    CFNumberType = 3;
 pub static kCFNumberSInt64Type:    CFNumberType = 4;
 pub static kCFNumberFloat32Type:   CFNumberType = 5;

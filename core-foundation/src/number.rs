@@ -25,6 +25,23 @@ impl_CFTypeDescription!(CFNumber);
 impl_CFComparison!(CFNumber, CFNumberCompare);
 
 impl CFNumber {
+    #[inline]
+    pub fn to_i8(&self) -> Option<i8> {
+        unsafe {
+            let mut value: i8 = 0;
+            let ok = CFNumberGetValue(self.0, kCFNumberSInt8Type, &mut value as *mut i8 as *mut c_void);
+            if ok { Some(value) } else { None }
+        }
+    }
+
+    #[inline]
+    pub fn to_i16(&self) -> Option<i16> {
+        unsafe {
+            let mut value: i16 = 0;
+            let ok = CFNumberGetValue(self.0, kCFNumberSInt16Type, &mut value as *mut i16 as *mut c_void);
+            if ok { Some(value) } else { None }
+        }
+    }
 
     #[inline]
     pub fn to_i32(&self) -> Option<i32> {
